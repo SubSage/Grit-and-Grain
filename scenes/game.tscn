@@ -1,16 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://bbsahsodw162s"]
+[gd_scene load_steps=7 format=3 uid="uid://bbsahsodw162s"]
 
 [ext_resource type="PackedScene" uid="uid://b124d4l4dvj6o" path="res://scenes/ui.tscn" id="1_4f7b2"]
 [ext_resource type="Script" path="res://scenes/game.gd" id="1_groaa"]
 [ext_resource type="PackedScene" uid="uid://bwfttxejca2jw" path="res://scenes/player.tscn" id="1_upthq"]
 [ext_resource type="PackedScene" uid="uid://wac234jvi1bq" path="res://scenes/hex_brick.tscn" id="3_6gkgu"]
 [ext_resource type="PackedScene" uid="uid://emokmdu2jesf" path="res://scenes/spawner.tscn" id="6_exiif"]
+[ext_resource type="PackedScene" uid="uid://dremap2mpx6rn" path="res://scenes/shooting_enemy.tscn" id="6_fgoe4"]
 
 [node name="game" type="Node2D"]
 script = ExtResource("1_groaa")
 
 [node name="PLAYER" parent="." instance=ExtResource("1_upthq")]
 position = Vector2(983, 994)
+health = 99999
 
 [node name="ENEMIES" type="Node2D" parent="."]
 
@@ -1901,19 +1903,55 @@ scale = Vector2(0.5, 0.5)
 [node name="spawner" parent="." instance=ExtResource("6_exiif")]
 position = Vector2(642, 718)
 spawn_count = 2
+unit_to_spawn = ExtResource("6_fgoe4")
 
 [node name="spawner2" parent="." instance=ExtResource("6_exiif")]
 position = Vector2(861, 681)
 initial_delay = 3.0
-spawn_count = 2
+spawn_count = 0
 
 [node name="spawner3" parent="." instance=ExtResource("6_exiif")]
 position = Vector2(1119, 666)
 initial_delay = 5.0
-spawn_count = 2
+spawn_count = 0
 
 [node name="spawner4" parent="." instance=ExtResource("6_exiif")]
 position = Vector2(1366, 703)
 initial_delay = 7.0
 spawn_delay = 0.4
-spawn_count = 20
+spawn_count = 0
+unit_to_spawn = ExtResource("6_fgoe4")
+
+[node name="spawner5" parent="." instance=ExtResource("6_exiif")]
+position = Vector2(463, 696)
+initial_delay = 7.0
+spawn_delay = 0.4
+spawn_count = 0
+unit_to_spawn = ExtResource("6_fgoe4")
+
+[node name="spawner6" parent="." instance=ExtResource("6_exiif")]
+position = Vector2(349, 954)
+initial_delay = 7.0
+spawn_delay = 0.4
+spawn_count = 0
+unit_to_spawn = ExtResource("6_fgoe4")
+
+[node name="spawner7" parent="." instance=ExtResource("6_exiif")]
+position = Vector2(542, 1275)
+initial_delay = 7.0
+spawn_delay = 0.4
+spawn_count = 0
+unit_to_spawn = ExtResource("6_fgoe4")
+
+[node name="spawner8" parent="." instance=ExtResource("6_exiif")]
+position = Vector2(1029, 1329)
+initial_delay = 7.0
+spawn_delay = 0.4
+spawn_count = 0
+unit_to_spawn = ExtResource("6_fgoe4")
+
+[node name="spawner9" parent="." instance=ExtResource("6_exiif")]
+position = Vector2(1443, 1082)
+initial_delay = 7.0
+spawn_delay = 0.4
+unit_to_spawn = ExtResource("6_fgoe4")

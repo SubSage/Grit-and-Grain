@@ -7,24 +7,24 @@ class_name BASIC_GUN
 @export var angle_degree = 90
 @export var friendly = false
 @export var turn_rate = 20
+var firing = false
 
 var cooldown = 0
 
 @onready var BULLET_CLASS = preload("res://scenes/bullet.tscn")
 @onready var bullet_holding_node : Node = get_tree().root.find_child("BULLETS", true, false)
-var window_size = Vector2(1920, 1080)
-
+@export var player_controlled = false
 
 func _process(delta: float) -> void:
 	cooldown -= delta
 	cooldown = clamp(cooldown, -1, 100)
-	
-	var fire_weapon_input = Input.get_vector("fire_left", "fire_right", "fire_up", "fire_down")
-	if fire_weapon_input.length() > .1:
-		global_rotation = lerp_angle(global_rotation, fire_weapon_input.angle() - deg_to_rad(-90), turn_rate * delta)
+	if player_controlled:
+		var fire_weapon_input = Input.get_vector("fire_left", "fire_right", "fire_up", "fire_down")
+		if fire_weapon_input.length() > .1:
+			global_rotation = lerp_angle(global_rotation, fire_weapon_input.angle() - deg_to_rad(-90), turn_rate * delta)
 
 	
-	if Input.is_action_pressed("fire_weapon") and cooldown <= 0:
+	if (Input.is_action_pressed("fire_weapon") or firing) and cooldown <= 0:
 		var bullet = BULLET_CLASS.instantiate()
 		bullet.speed = bullet_speed
 		bullet.global_position = global_position
@@ -37,3 +37,6 @@ func _process(delta: float) -> void:
 		else:
 			bullet.set_hostile()
 		cooldown = 1.0/(fire_rate)
+
+func fire():
+	firing = true

@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://dremap2mpx6rn"]
+
+[ext_resource type="Script" path="res://scenes/shooting_enemy.gd" id="1_p4c6r"]
+[ext_resource type="Texture2D" uid="uid://ei66wdw5ksq" path="res://assets/shape_svg/noun_air_element_3554176.svg" id="2_6i587"]
+[ext_resource type="PackedScene" uid="uid://dv5scomcsyc54" path="res://scenes/basic_gun.tscn" id="3_d56yg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yijod"]
+radius = 20.2237
+
+[node name="shooting_enemy" type="Node2D"]
+script = ExtResource("1_p4c6r")
+speed = 250
+
+[node name="NounFireElement3556726" type="Sprite2D" parent="."]
+self_modulate = Color(0.765428, 0.199121, 0.1217, 1)
+rotation = 1.5708
+scale = Vector2(0.77, 0.77)
+texture = ExtResource("2_6i587")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_yijod")
+
+[node name="WEAPONS" type="Node2D" parent="."]
+
+[node name="basic_gun" parent="WEAPONS" instance=ExtResource("3_d56yg")]
+visible = false
+rotation = 1.5708

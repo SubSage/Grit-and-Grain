@@ -35,10 +35,12 @@ shape = SubResource("CircleShape2D_5c8vx")
 position = Vector2(-30, 8)
 fire_rate = 10.0
 friendly = true
+player_controlled = true
 
 [node name="basic_gun2" parent="WEAPONS" instance=ExtResource("3_sp8bm")]
 position = Vector2(30, 8)
 fire_rate = 12.0
 friendly = true
+player_controlled = true
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
