@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://bwfttxejca2jw"]
+
+[ext_resource type="Script" path="res://scenes/player.gd" id="1_s5wqg"]
+[ext_resource type="Texture2D" uid="uid://bw1ugytlkgceg" path="res://assets/shape_svg/noun_Kite_1122255.svg" id="2_u4xd5"]
+[ext_resource type="PackedScene" uid="uid://dv5scomcsyc54" path="res://scenes/basic_gun.tscn" id="3_sp8bm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5c8vx"]
+radius = 18.0278
+
+[node name="PLAYER" type="Node2D"]
+script = ExtResource("1_s5wqg")
+health = 1
+speed = 300
+
+[node name="Icon" type="Sprite2D" parent="."]
+self_modulate = Color(0.301961, 0.301961, 0.298039, 1)
+position = Vector2(0, -9.03)
+rotation = -3.14159
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_u4xd5")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+position_smoothing_speed = 12.0
+
+[node name="basic_gun" parent="." instance=ExtResource("3_sp8bm")]
+position = Vector2(-30, 8)
+angle_degree = -90
+friendly = true
+
+[node name="basic_gun2" parent="." instance=ExtResource("3_sp8bm")]
+position = Vector2(30, 8)
+angle_degree = -90
+friendly = true
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_5c8vx")

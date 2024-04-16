@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dlw4l0tlssswg"]
+
+[ext_resource type="Script" path="res://scenes/basic_enemy.gd" id="1_6ynvd"]
+[ext_resource type="Texture2D" uid="uid://c4udiyk4vi61f" path="res://assets/shape_svg/noun_Circle_12972.svg" id="2_b83fq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yijod"]
+radius = 51.0098
+
+[node name="Basic_enemy" type="Node2D"]
+script = ExtResource("1_6ynvd")
+
+[node name="NounFireElement3556726" type="Sprite2D" parent="."]
+self_modulate = Color(0.765428, 0.199121, 0.1217, 1)
+texture = ExtResource("2_b83fq")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_yijod")

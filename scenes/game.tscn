@@ -1,0 +1,1900 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbsahsodw162s"]
+
+[ext_resource type="PackedScene" uid="uid://b124d4l4dvj6o" path="res://scenes/ui.tscn" id="1_4f7b2"]
+[ext_resource type="PackedScene" uid="uid://bwfttxejca2jw" path="res://scenes/player.tscn" id="1_upthq"]
+[ext_resource type="PackedScene" uid="uid://wac234jvi1bq" path="res://scenes/hex_brick.tscn" id="3_6gkgu"]
+[ext_resource type="PackedScene" uid="uid://dlw4l0tlssswg" path="res://scenes/basic_enemy.tscn" id="3_gun17"]
+
+[node name="game" type="Node2D"]
+
+[node name="PLAYER" parent="." instance=ExtResource("1_upthq")]
+position = Vector2(983, 994)
+
+[node name="ENEMIES" type="Node2D" parent="."]
+
+[node name="hex_brick" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(787, 507)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick2" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(750, 528)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick3" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(750, 484)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick4" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(714, 507)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick5" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(677, 528)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick6" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(677, 484)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick7" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(787, 551)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick8" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(750, 572)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick10" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(714, 551)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick11" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(677, 572)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick9" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(934, 508)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick12" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(897, 529)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick13" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(897, 485)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick14" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(861, 508)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick15" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(824, 529)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick16" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(824, 485)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick17" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(934, 552)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick18" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(897, 573)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick19" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(861, 552)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick20" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(824, 573)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick21" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(492, 507)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick22" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(455, 528)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick23" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(455, 484)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick24" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(419, 507)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick25" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(382, 528)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick26" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(382, 484)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick27" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(492, 551)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick28" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(455, 572)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick29" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(419, 551)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick30" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(382, 572)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick31" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(639, 508)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick32" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(602, 529)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick33" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(602, 485)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick34" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(566, 508)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick35" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(529, 529)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick36" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(529, 485)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick37" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(639, 552)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick38" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(602, 573)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick39" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(566, 552)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick40" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(529, 573)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick41" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(197, 507)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick42" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(160, 528)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick43" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(160, 484)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick44" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(124, 507)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick47" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(197, 551)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick48" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(160, 572)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick49" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(124, 551)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick51" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(344, 508)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick52" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(307, 529)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick53" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(307, 485)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick54" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(271, 508)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick55" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(234, 529)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick56" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(234, 485)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick57" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(344, 552)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick58" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(307, 573)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick59" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(271, 552)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick60" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(234, 573)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick61" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(823, 399)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick62" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(786, 420)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick63" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(786, 376)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick64" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(750, 399)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick65" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(713, 420)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick66" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(713, 376)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick67" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(823, 443)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick68" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(786, 464)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick69" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(750, 443)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick70" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(713, 464)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick71" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(970, 400)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick72" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(933, 421)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick73" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(933, 377)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick74" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(897, 400)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick75" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(860, 421)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick76" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(860, 377)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick77" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(970, 444)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick78" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(933, 465)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick79" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(897, 444)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick80" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(860, 465)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick81" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(528, 399)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick82" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(491, 420)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick83" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(491, 376)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick84" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(455, 399)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick85" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(418, 420)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick86" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(418, 376)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick87" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(528, 443)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick88" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(491, 464)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick89" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(455, 443)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick90" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(418, 464)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick91" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(675, 400)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick92" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(638, 421)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick93" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(638, 377)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick94" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(602, 400)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick95" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(565, 421)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick96" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(565, 377)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick97" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(675, 444)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick98" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(638, 465)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick99" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(602, 444)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick100" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(565, 465)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick101" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(233, 399)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick102" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(196, 420)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick103" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(196, 376)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick104" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(160, 399)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick105" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(123, 420)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick106" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(123, 376)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick107" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(233, 443)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick108" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(196, 464)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick109" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(160, 443)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick110" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(123, 464)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick111" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(380, 400)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick112" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(343, 421)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick113" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(343, 377)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick114" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(307, 400)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick115" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(270, 421)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick116" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(270, 377)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick117" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(380, 444)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick118" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(343, 465)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick119" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(307, 444)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick120" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(270, 465)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick121" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1671, 510)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick122" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1634, 531)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick123" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1634, 487)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick124" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1598, 510)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick125" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1561, 531)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick126" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1561, 487)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick127" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1671, 554)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick128" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1634, 575)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick129" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1598, 554)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick130" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1561, 575)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick131" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1818, 511)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick132" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1781, 532)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick133" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1781, 488)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick134" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1745, 511)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick135" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1708, 532)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick136" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1708, 488)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick137" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1818, 555)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick138" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1781, 576)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick139" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1745, 555)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick140" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1708, 576)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick141" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1376, 510)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick142" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1339, 531)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick143" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1339, 487)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick144" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1303, 510)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick145" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1266, 531)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick146" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1266, 487)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick147" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1376, 554)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick148" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1339, 575)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick149" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1303, 554)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick150" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1266, 575)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick151" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1523, 511)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick152" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1486, 532)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick153" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1486, 488)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick154" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1450, 511)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick155" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1413, 532)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick156" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1413, 488)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick157" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1523, 555)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick158" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1486, 576)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick159" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1450, 555)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick160" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1413, 576)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick161" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1081, 510)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick162" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1044, 531)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick163" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1044, 487)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick164" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1008, 510)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick165" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(971, 531)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick166" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(971, 487)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick167" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1081, 554)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick168" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1044, 575)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick169" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1008, 554)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick170" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(971, 575)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick171" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1228, 511)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick172" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1191, 532)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick173" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1191, 488)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick174" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1155, 511)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick175" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1118, 532)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick176" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1118, 488)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick177" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1228, 555)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick178" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1191, 576)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick179" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1155, 555)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick180" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1118, 576)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick181" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1707, 402)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick182" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1670, 423)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick183" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1670, 379)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick184" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1634, 402)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick185" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1597, 423)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick186" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1597, 379)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick187" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1707, 446)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick188" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1670, 467)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick189" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1634, 446)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick190" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1597, 467)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick192" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1817, 424)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick193" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1817, 380)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick194" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1781, 403)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick195" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1744, 424)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick196" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1744, 380)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick198" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1817, 468)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick199" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1781, 447)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick200" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1744, 468)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick201" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1412, 402)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick202" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1375, 423)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick203" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1375, 379)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick204" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1339, 402)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick205" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1302, 423)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick206" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1302, 379)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick207" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1412, 446)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick208" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1375, 467)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick209" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1339, 446)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick210" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1302, 467)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick211" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1559, 403)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick212" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1522, 424)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick213" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1522, 380)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick214" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1486, 403)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick215" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1449, 424)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick216" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1449, 380)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick217" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1559, 447)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick218" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1522, 468)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick219" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1486, 447)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick220" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1449, 468)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick221" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1117, 402)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick222" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1080, 423)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick223" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1080, 379)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick224" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1044, 402)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick225" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1007, 423)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick226" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1007, 379)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick227" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1117, 446)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick228" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1080, 467)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick229" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1044, 446)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick230" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1007, 467)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick231" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1264, 403)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick232" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1227, 424)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick233" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1227, 380)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick234" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1191, 403)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick235" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1154, 424)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick236" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1154, 380)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick237" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1264, 447)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick238" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1227, 468)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick239" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1191, 447)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick240" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1154, 468)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick241" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(788, 289)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick242" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(751, 310)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick243" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(751, 266)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick244" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(715, 289)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick245" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(678, 310)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick246" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(678, 266)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick247" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(788, 333)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick248" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(751, 354)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick249" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(715, 333)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick250" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(678, 354)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick251" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(935, 290)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick252" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(898, 311)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick253" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(898, 267)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick254" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(862, 290)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick255" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(825, 311)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick256" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(825, 267)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick257" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(935, 334)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick258" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(898, 355)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick259" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(862, 334)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick260" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(825, 355)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick261" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(493, 289)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick262" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(456, 310)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick263" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(456, 266)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick264" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(420, 289)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick265" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(383, 310)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick266" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(383, 266)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick267" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(493, 333)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick268" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(456, 354)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick269" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(420, 333)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick270" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(383, 354)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick271" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(640, 290)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick272" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(603, 311)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick273" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(603, 267)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick274" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(567, 290)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick275" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(530, 311)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick276" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(530, 267)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick277" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(640, 334)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick278" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(603, 355)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick279" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(567, 334)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick280" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(530, 355)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick281" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(198, 289)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick282" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(161, 310)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick283" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(161, 266)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick284" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(125, 289)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick287" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(198, 333)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick288" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(161, 354)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick289" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(125, 333)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick291" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(345, 290)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick292" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(308, 311)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick293" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(308, 267)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick294" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(272, 290)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick295" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(235, 311)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick296" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(235, 267)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick297" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(345, 334)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick298" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(308, 355)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick299" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(272, 334)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick300" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(235, 355)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick301" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(824, 181)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick302" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(787, 202)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick303" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(787, 158)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick304" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(751, 181)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick305" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(714, 202)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick306" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(714, 158)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick307" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(824, 225)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick308" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(787, 246)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick309" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(751, 225)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick310" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(714, 246)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick311" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(971, 182)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick312" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(934, 203)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick313" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(934, 159)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick314" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(898, 182)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick315" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(861, 203)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick316" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(861, 159)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick317" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(971, 226)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick318" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(934, 247)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick319" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(898, 226)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick320" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(861, 247)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick321" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(529, 181)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick322" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(492, 202)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick323" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(492, 158)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick324" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(456, 181)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick325" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(419, 202)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick326" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(419, 158)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick327" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(529, 225)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick328" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(492, 246)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick329" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(456, 225)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick330" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(419, 246)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick331" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(676, 182)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick332" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(639, 203)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick333" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(639, 159)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick334" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(603, 182)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick335" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(566, 203)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick336" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(566, 159)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick337" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(676, 226)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick338" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(639, 247)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick339" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(603, 226)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick340" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(566, 247)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick341" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(234, 181)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick342" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(197, 202)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick343" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(197, 158)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick344" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(161, 181)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick345" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(124, 202)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick346" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(124, 158)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick347" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(234, 225)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick348" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(197, 246)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick349" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(161, 225)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick350" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(124, 246)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick351" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(381, 182)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick352" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(344, 203)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick353" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(344, 159)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick354" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(308, 182)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick355" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(271, 203)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick356" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(271, 159)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick357" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(381, 226)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick358" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(344, 247)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick359" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(308, 226)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick360" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(271, 247)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick361" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1672, 292)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick362" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1635, 313)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick363" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1635, 269)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick364" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1599, 292)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick365" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1562, 313)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick366" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1562, 269)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick367" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1672, 336)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick368" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1635, 357)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick369" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1599, 336)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick370" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1562, 357)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick371" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1819, 293)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick372" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1782, 314)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick373" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1782, 270)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick374" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1746, 293)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick375" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1709, 314)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick376" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1709, 270)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick377" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1819, 337)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick378" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1782, 358)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick379" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1746, 337)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick380" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1709, 358)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick381" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1377, 292)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick382" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1340, 313)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick383" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1340, 269)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick384" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1304, 292)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick385" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1267, 313)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick386" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1267, 269)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick387" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1377, 336)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick388" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1340, 357)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick389" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1304, 336)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick390" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1267, 357)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick391" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1524, 293)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick392" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1487, 314)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick393" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1487, 270)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick394" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1451, 293)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick395" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1414, 314)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick396" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1414, 270)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick397" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1524, 337)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick398" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1487, 358)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick399" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1451, 337)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick400" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1414, 358)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick401" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1082, 292)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick402" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1045, 313)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick403" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1045, 269)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick404" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1009, 292)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick405" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(972, 313)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick406" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(972, 269)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick407" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1082, 336)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick408" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1045, 357)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick409" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1009, 336)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick410" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(972, 357)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick411" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1229, 293)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick412" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1192, 314)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick413" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1192, 270)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick414" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1156, 293)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick415" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1119, 314)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick416" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1119, 270)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick417" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1229, 337)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick418" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1192, 358)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick419" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1156, 337)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick420" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1119, 358)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick421" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1708, 184)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick422" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1671, 205)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick423" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1671, 161)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick424" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1635, 184)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick425" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1598, 205)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick426" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1598, 161)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick427" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1708, 228)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick428" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1671, 249)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick429" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1635, 228)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick430" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1598, 249)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick432" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1818, 206)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick433" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1818, 162)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick434" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1782, 185)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick435" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1745, 206)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick436" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1745, 162)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick438" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1818, 250)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick439" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1782, 229)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick440" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1745, 250)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick441" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1413, 184)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick442" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1376, 205)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick443" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1376, 161)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick444" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1340, 184)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick445" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1303, 205)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick446" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1303, 161)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick447" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1413, 228)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick448" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1376, 249)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick449" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1340, 228)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick450" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1303, 249)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick451" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1560, 185)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick452" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1523, 206)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick453" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1523, 162)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick454" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1487, 185)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick455" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1450, 206)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick456" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1450, 162)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick457" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1560, 229)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick458" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1523, 250)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick459" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1487, 229)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick460" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1450, 250)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick461" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1118, 184)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick462" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1081, 205)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick463" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1081, 161)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick464" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1045, 184)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick465" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1008, 205)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick466" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1008, 161)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick467" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1118, 228)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick468" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1081, 249)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick469" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1045, 228)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick470" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1008, 249)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick471" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1265, 185)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick472" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1228, 206)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick473" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1228, 162)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick474" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1192, 185)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick475" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1155, 206)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick476" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1155, 162)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick477" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1265, 229)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick478" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1228, 250)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick479" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1192, 229)
+scale = Vector2(0.5, 0.5)
+
+[node name="hex_brick480" parent="ENEMIES" instance=ExtResource("3_6gkgu")]
+position = Vector2(1155, 250)
+scale = Vector2(0.5, 0.5)
+
+[node name="Basic_enemy" parent="ENEMIES" instance=ExtResource("3_gun17")]
+position = Vector2(1142, 723)
+
+[node name="BULLETS" type="Node2D" parent="."]
+
+[node name="UI" parent="." instance=ExtResource("1_4f7b2")]
