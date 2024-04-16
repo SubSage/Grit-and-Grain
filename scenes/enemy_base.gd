@@ -1,5 +1,5 @@
-extends Node
-class_name ENEMY_BASE
+extends Node2D
+class_name UNIT
 
 @export var health = 2
 @onready var player_node : Node = get_tree().root.find_child("PLAYER", true, false)

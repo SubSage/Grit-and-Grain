@@ -1,4 +1,4 @@
-extends ENEMY_BASE
+extends UNIT
 
 
 
