@@ -5,6 +5,7 @@ class_name BULLET
 @export var angle_radian = deg_to_rad(-90)
 @export var damage = 1
 @export var duration = 12.0
+@export var can_hit_multiple = false
 
 #func _ready() -> void:
 	#set_friendly()
@@ -23,5 +24,6 @@ func set_hostile():
 	set_collision_mask_value(2, true)
 	
 func _on_area_entered(area: Area2D) -> void:
-	area.owner.take_hit(damage)
+	if can_hit_multiple or not is_queued_for_deletion():
+		area.owner.take_hit(damage)
 	queue_free()
