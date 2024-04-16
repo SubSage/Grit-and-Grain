@@ -6,7 +6,7 @@ extends UNIT
 func _process(delta: float) -> void:
 	
 	if position.distance_to(player_node.position) > move_to_player_proximity:
-		position = position.move_toward(player_node.position, speed * delta)
+		position = position.move_toward(player_node.position, speed * delta * position.distance_to(player_node.position)/ 600.0)
 	if position.distance_to(player_node.position) <= fire_at_player_proximity:
 		for gun in $WEAPONS.get_children():
 			gun.fire()

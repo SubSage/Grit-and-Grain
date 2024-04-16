@@ -1944,7 +1944,7 @@ spawn_count = 0
 unit_to_spawn = ExtResource("6_fgoe4")
 
 [node name="spawner8" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(1029, 1329)
+position = Vector2(1029, 1330)
 initial_delay = 7.0
 spawn_delay = 0.4
 spawn_count = 0
