@@ -1,10 +1,7 @@
 extends UNIT
 class_name PLAYER
 
-@export var speed = 400
 @export var turn_rate = 20
-
-var window_size = Vector2(1920, 1080)
 
 
 func _process(delta: float) -> void:

@@ -2,6 +2,7 @@ extends Node2D
 class_name UNIT
 
 @export var health = 2
+@export var speed = 400
 @onready var player_node : Node = get_tree().root.find_child("PLAYER", true, false)
 
 
