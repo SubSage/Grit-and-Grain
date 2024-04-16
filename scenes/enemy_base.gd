@@ -8,4 +8,7 @@ class_name UNIT
 func take_hit(damage):
 	health -= damage
 	if health <= 0:
-		queue_free()
+		die()
+		
+func die():
+	queue_free()
