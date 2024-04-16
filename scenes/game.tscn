@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bbsahsodw162s"]
+[gd_scene load_steps=6 format=3 uid="uid://bbsahsodw162s"]
 
 [ext_resource type="PackedScene" uid="uid://b124d4l4dvj6o" path="res://scenes/ui.tscn" id="1_4f7b2"]
 [ext_resource type="Script" path="res://scenes/game.gd" id="1_groaa"]
 [ext_resource type="PackedScene" uid="uid://bwfttxejca2jw" path="res://scenes/player.tscn" id="1_upthq"]
 [ext_resource type="PackedScene" uid="uid://wac234jvi1bq" path="res://scenes/hex_brick.tscn" id="3_6gkgu"]
-[ext_resource type="PackedScene" uid="uid://dlw4l0tlssswg" path="res://scenes/basic_enemy.tscn" id="3_gun17"]
 [ext_resource type="PackedScene" uid="uid://emokmdu2jesf" path="res://scenes/spawner.tscn" id="6_exiif"]
 
 [node name="game" type="Node2D"]
@@ -1895,12 +1894,26 @@ scale = Vector2(0.5, 0.5)
 position = Vector2(1155, 250)
 scale = Vector2(0.5, 0.5)
 
-[node name="Basic_enemy" parent="ENEMIES" instance=ExtResource("3_gun17")]
-position = Vector2(1142, 723)
-
 [node name="BULLETS" type="Node2D" parent="."]
 
 [node name="UI" parent="." instance=ExtResource("1_4f7b2")]
 
 [node name="spawner" parent="." instance=ExtResource("6_exiif")]
 position = Vector2(642, 718)
+spawn_count = 2
+
+[node name="spawner2" parent="." instance=ExtResource("6_exiif")]
+position = Vector2(861, 681)
+initial_delay = 3.0
+spawn_count = 2
+
+[node name="spawner3" parent="." instance=ExtResource("6_exiif")]
+position = Vector2(1119, 666)
+initial_delay = 5.0
+spawn_count = 2
+
+[node name="spawner4" parent="." instance=ExtResource("6_exiif")]
+position = Vector2(1366, 703)
+initial_delay = 7.0
+spawn_delay = 0.4
+spawn_count = 20

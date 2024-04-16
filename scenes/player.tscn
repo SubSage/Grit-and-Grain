@@ -25,7 +25,6 @@ position_smoothing_speed = 12.0
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 2
-collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_5c8vx")
@@ -41,3 +40,5 @@ friendly = true
 position = Vector2(30, 8)
 fire_rate = 12.0
 friendly = true
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

@@ -12,6 +12,7 @@ extends Node2D
 func _ready() -> void:
 	$spawn.wait_time = spawn_delay
 	$initial_delay.wait_time = initial_delay
+	$initial_delay.start()
 	
 	
 func _process(delta: float) -> void:
