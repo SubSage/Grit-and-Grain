@@ -1,0 +1,71 @@
+[gd_scene load_steps=8 format=3 uid="uid://bivsn48mk3vx5"]
+
+[ext_resource type="Script" path="res://scenes/laser_gun.gd" id="1_y03n7"]
+[ext_resource type="Texture2D" uid="uid://bvq6wthxy0sgx" path="res://assets/shape_svg/noun_Trapezoid_1122240.svg" id="2_8ls78"]
+[ext_resource type="Texture2D" uid="uid://2elu2b2t50at" path="res://assets/shape_svg/noun_Trapezoid_1122241.svg" id="3_02xst"]
+[ext_resource type="Texture2D" uid="uid://bwbrsijrfiqjj" path="res://assets/shape_svg/noun_ripple_2343683.svg" id="4_ji725"]
+[ext_resource type="Texture2D" uid="uid://dryy743ytj1sr" path="res://assets/shape_svg/noun_Minus_2160596.svg" id="5_fcjb1"]
+[ext_resource type="Texture2D" uid="uid://ddrltwer6mihg" path="res://assets/shape_svg/noun_Irregular_quadrilateral_1117058.svg" id="6_f4p8x"]
+[ext_resource type="Texture2D" uid="uid://d1k1a0iykggv5" path="res://assets/shape_svg/noun_Irregular_quadrilateral_1117060.svg" id="7_svk1y"]
+
+[node name="laser_gun" type="Node2D"]
+script = ExtResource("1_y03n7")
+
+[node name="NounKite1122256" type="Sprite2D" parent="."]
+self_modulate = Color(0.743216, 4.35102e-05, 0.118902, 1)
+position = Vector2(0, -5)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_8ls78")
+
+[node name="NounTrapezoid1122241" type="Sprite2D" parent="NounKite1122256"]
+self_modulate = Color(0, 0, 0, 1)
+texture = ExtResource("3_02xst")
+
+[node name="NounRipple2343683" type="Sprite2D" parent="NounKite1122256"]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(0, -54.5)
+scale = Vector2(6, 6)
+texture = ExtResource("4_ji725")
+
+[node name="NounMinus2160596" type="Sprite2D" parent="NounKite1122256"]
+self_modulate = Color(0.745098, 0, 0.117647, 0)
+position = Vector2(0, -24)
+rotation = 2.0944
+scale = Vector2(20, 1)
+texture = ExtResource("5_fcjb1")
+offset = Vector2(-40, 0)
+
+[node name="NounMinus2160597" type="Sprite2D" parent="NounKite1122256"]
+self_modulate = Color(0.745098, 0, 0.117647, 0)
+position = Vector2(0, -24)
+rotation = 1.0472
+scale = Vector2(20, 1)
+texture = ExtResource("5_fcjb1")
+offset = Vector2(-40, 0)
+
+[node name="NounIrregularQuadrilateral1117058" type="Sprite2D" parent="NounKite1122256"]
+self_modulate = Color(0.745098, 0, 0.117647, 1)
+position = Vector2(32, -64)
+rotation = 1.5708
+texture = ExtResource("6_f4p8x")
+
+[node name="NounIrregularQuadrilateral1117060" type="Sprite2D" parent="NounKite1122256/NounIrregularQuadrilateral1117058"]
+self_modulate = Color(0, 0, 0, 1)
+texture = ExtResource("7_svk1y")
+
+[node name="NounIrregularQuadrilateral1117059" type="Sprite2D" parent="NounKite1122256"]
+self_modulate = Color(0.745098, 0, 0.117647, 1)
+position = Vector2(-32, -64)
+rotation = 1.5708
+scale = Vector2(1, -1)
+texture = ExtResource("6_f4p8x")
+
+[node name="NounIrregularQuadrilateral1117060" type="Sprite2D" parent="NounKite1122256/NounIrregularQuadrilateral1117059"]
+self_modulate = Color(0, 0, 0, 1)
+texture = ExtResource("7_svk1y")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="spawn_laser"]

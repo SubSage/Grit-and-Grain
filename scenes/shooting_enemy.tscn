@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dremap2mpx6rn"]
+[gd_scene load_steps=6 format=3 uid="uid://dremap2mpx6rn"]
 
 [ext_resource type="Script" path="res://scenes/shooting_enemy.gd" id="1_p4c6r"]
 [ext_resource type="Texture2D" uid="uid://ei66wdw5ksq" path="res://assets/shape_svg/noun_air_element_3554176.svg" id="2_6i587"]
@@ -6,6 +6,9 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yijod"]
 radius = 20.2237
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rwj3h"]
+radius = 8.0
 
 [node name="shooting_enemy" type="Node2D"]
 script = ExtResource("1_p4c6r")
@@ -21,6 +24,27 @@ texture = ExtResource("2_6i587")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_yijod")
+
+[node name="check_ahead" type="Area2D" parent="."]
+position = Vector2(60, 0)
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="check_ahead"]
+shape = SubResource("CircleShape2D_rwj3h")
+
+[node name="check_left" type="Area2D" parent="."]
+position = Vector2(0, -60)
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="check_left"]
+shape = SubResource("CircleShape2D_rwj3h")
+
+[node name="check_right" type="Area2D" parent="."]
+position = Vector2(0, 60)
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="check_right"]
+shape = SubResource("CircleShape2D_rwj3h")
 
 [node name="WEAPONS" type="Node2D" parent="."]
 

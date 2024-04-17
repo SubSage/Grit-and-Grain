@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxhothfkudnpf"]
+
+[ext_resource type="Script" path="res://scenes/laser.gd" id="1_xnmlr"]
+[ext_resource type="Texture2D" uid="uid://dryy743ytj1sr" path="res://assets/shape_svg/noun_Minus_2160596.svg" id="2_4ahuu"]
+[ext_resource type="Texture2D" uid="uid://cakcqh2t48i25" path="res://assets/shape_svg/noun_right_268231.svg" id="3_cjc7i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eju46"]
+size = Vector2(20, 1485)
+
+[node name="laser" type="Area2D"]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_xnmlr")
+speed = 0
+damage = 10
+duration = 1.0
+can_hit_multiple = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+self_modulate = Color(0.662745, 0.654902, 0.643137, 1)
+position = Vector2(0, -742.5)
+shape = SubResource("RectangleShape2D_eju46")
+
+[node name="NounPyramid1122251" type="Sprite2D" parent="."]
+visible = false
+self_modulate = Color(0.301961, 0.301961, 0.298039, 1)
+position = Vector2(0, -738.25)
+rotation = 1.5708
+scale = Vector2(20, 5)
+texture = ExtResource("2_4ahuu")
+
+[node name="Line2D2" type="Line2D" parent="."]
+self_modulate = Color(0.713923, 0.107478, 0.24041, 1)
+texture_repeat = 2
+scale = Vector2(3.54, 3.54)
+points = PackedVector2Array(0, 0, 0, -419.492)
+width = 6.0
+texture_mode = 1
+
+[node name="Line2D" type="Line2D" parent="."]
+self_modulate = Color(0.293809, 0.0461476, 0.0116801, 1)
+texture_repeat = 2
+scale = Vector2(3.54, 3.54)
+points = PackedVector2Array(0, 0, 0, -419.492)
+width = 6.0
+texture = ExtResource("3_cjc7i")
+texture_mode = 1
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

@@ -1901,113 +1901,21 @@ scale = Vector2(0.5, 0.5)
 [node name="UI" parent="." instance=ExtResource("1_4f7b2")]
 
 [node name="spawner" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(642, 718)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner2" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(861, 681)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner3" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(1091, 708)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner4" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(1310, 671)
+position = Vector2(552, 738)
 unit_to_spawn = ExtResource("6_fgoe4")
 
 [node name="spawner5" parent="." instance=ExtResource("6_exiif")]
 position = Vector2(1558, 730)
 unit_to_spawn = ExtResource("6_fgoe4")
 
-[node name="spawner6" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(1777, 693)
-unit_to_spawn = ExtResource("6_fgoe4")
-
 [node name="spawner7" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(90, 743)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner8" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(309, 706)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner9" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(-214, 1014)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner10" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(5, 977)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner11" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(-289, 1317)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner12" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(-70, 1280)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner13" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(-42, 1516)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner14" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(177, 1479)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner15" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(272, 1688)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner16" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(491, 1651)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner17" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(692, 1776)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner18" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(911, 1739)
+position = Vector2(176, 1461)
 unit_to_spawn = ExtResource("6_fgoe4")
 
 [node name="spawner19" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(1242, 1792)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner20" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(1461, 1755)
+position = Vector2(1040, 1784)
 unit_to_spawn = ExtResource("6_fgoe4")
 
 [node name="spawner21" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(1860, 1660)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner22" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(2079, 1623)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner23" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(2036, 1372)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner24" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(2255, 1335)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner25" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(2022, 1008)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner26" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(2241, 971)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner27" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(1916, 828)
-unit_to_spawn = ExtResource("6_fgoe4")
-
-[node name="spawner28" parent="." instance=ExtResource("6_exiif")]
-position = Vector2(2135, 791)
+position = Vector2(1928, 1638)
 unit_to_spawn = ExtResource("6_fgoe4")

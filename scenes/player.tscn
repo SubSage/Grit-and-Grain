@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bwfttxejca2jw"]
+[gd_scene load_steps=6 format=3 uid="uid://bwfttxejca2jw"]
 
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_s5wqg"]
 [ext_resource type="Texture2D" uid="uid://bw1ugytlkgceg" path="res://assets/shape_svg/noun_Kite_1122255.svg" id="2_u4xd5"]
 [ext_resource type="PackedScene" uid="uid://dv5scomcsyc54" path="res://scenes/basic_gun.tscn" id="3_sp8bm"]
+[ext_resource type="PackedScene" uid="uid://bivsn48mk3vx5" path="res://scenes/laser_gun.tscn" id="4_1eap3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5c8vx"]
 radius = 18.0278
@@ -30,6 +31,13 @@ collision_layer = 2
 shape = SubResource("CircleShape2D_5c8vx")
 
 [node name="WEAPONS" type="Node2D" parent="."]
+
+[node name="laser_gun" parent="WEAPONS" instance=ExtResource("4_1eap3")]
+position = Vector2(0, -46)
+bullet_speed = 0
+fire_rate = 12.0
+friendly = true
+player_controlled = true
 
 [node name="basic_gun" parent="WEAPONS" instance=ExtResource("3_sp8bm")]
 position = Vector2(-30, 8)
