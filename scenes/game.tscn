@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bbsahsodw162s"]
+[gd_scene load_steps=27 format=3 uid="uid://bbsahsodw162s"]
 
 [ext_resource type="PackedScene" uid="uid://b124d4l4dvj6o" path="res://scenes/ui.tscn" id="1_4f7b2"]
 [ext_resource type="Script" path="res://scenes/game.gd" id="1_groaa"]
@@ -6,6 +6,26 @@
 [ext_resource type="PackedScene" uid="uid://wac234jvi1bq" path="res://scenes/hex_brick.tscn" id="3_6gkgu"]
 [ext_resource type="PackedScene" uid="uid://emokmdu2jesf" path="res://scenes/spawner.tscn" id="6_exiif"]
 [ext_resource type="PackedScene" uid="uid://dremap2mpx6rn" path="res://scenes/shooting_enemy.tscn" id="6_fgoe4"]
+[ext_resource type="Texture2D" uid="uid://bxin5xnu0xbr7" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_Galaxy_1942612.svg" id="7_3cw4r"]
+[ext_resource type="Texture2D" uid="uid://d0d2g6dd4k6hb" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_Galaxy_1942618.svg" id="10_yu43u"]
+[ext_resource type="Texture2D" uid="uid://cvtof1rlk3typ" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_meteor_1942613.svg" id="11_cmn24"]
+[ext_resource type="Texture2D" uid="uid://ywmcovi7apba" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_Planet_1942611.svg" id="12_r85k1"]
+[ext_resource type="Texture2D" uid="uid://cc522clixcjt5" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_Planet_1942614.svg" id="13_60s1c"]
+[ext_resource type="Texture2D" uid="uid://bpqv56qhbu31v" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_Planet_1942615.svg" id="14_euf46"]
+[ext_resource type="Texture2D" uid="uid://d0m0uouvio83d" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_Black_Hole_1942616.svg" id="14_uhbwa"]
+[ext_resource type="Texture2D" uid="uid://ch72mwnc3is74" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_Planet_1942617.svg" id="15_babt0"]
+[ext_resource type="Texture2D" uid="uid://7kq1p2plew3q" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_Planet_1942621.svg" id="16_2xrg8"]
+[ext_resource type="Texture2D" uid="uid://c4h1fba312v1x" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_Planet_1942622.svg" id="17_i6g34"]
+[ext_resource type="Texture2D" uid="uid://cuqdgtaum7tfa" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_Planet_1942624.svg" id="18_nab8h"]
+[ext_resource type="Texture2D" uid="uid://wtcegv1scogr" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_Planet_1942625.svg" id="19_rvhwq"]
+[ext_resource type="Texture2D" uid="uid://b3mj4m70pijcj" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_Plane_1942628.svg" id="20_am8ty"]
+[ext_resource type="Texture2D" uid="uid://dggth7kcdx0ov" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_Rocket_1942630.svg" id="22_8i1c0"]
+[ext_resource type="Texture2D" uid="uid://btqxw12o8vlxm" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_Satellite_1942610.svg" id="23_ephnt"]
+[ext_resource type="Texture2D" uid="uid://bop0yuaob66hr" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_Satellite_1942623.svg" id="24_ltfcu"]
+[ext_resource type="Texture2D" uid="uid://1vsn1e56kjkt" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_Satellite_1942633.svg" id="25_hy2i0"]
+[ext_resource type="Texture2D" uid="uid://brrenc5plaxrr" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_stars_1942632.svg" id="26_q0ly5"]
+[ext_resource type="Texture2D" uid="uid://xotxskljfuul" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_ufo_1942626.svg" id="27_ptog7"]
+[ext_resource type="Texture2D" uid="uid://x2eq56nbgt1q" path="res://assets/shape_svg/iconfieldSpaceCollection/noun_universe_1942620.svg" id="28_2r8rf"]
 
 [node name="game" type="Node2D"]
 script = ExtResource("1_groaa")
@@ -1919,3 +1939,90 @@ unit_to_spawn = ExtResource("6_fgoe4")
 [node name="spawner21" parent="." instance=ExtResource("6_exiif")]
 position = Vector2(1928, 1638)
 unit_to_spawn = ExtResource("6_fgoe4")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+modulate = Color(0.560784, 0.560784, 0.556863, 0.329412)
+position = Vector2(-3000, -3000)
+motion_mirroring = Vector2(3000, 3000)
+
+[node name="NounBlackHole1942616" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(2338, 2702)
+texture = ExtResource("14_uhbwa")
+
+[node name="NounGalaxy1942612" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1993, 507)
+texture = ExtResource("7_3cw4r")
+
+[node name="NounGalaxy1942618" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(2132, 1455)
+texture = ExtResource("10_yu43u")
+
+[node name="NounMeteor1942613" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(2539, 991)
+texture = ExtResource("11_cmn24")
+
+[node name="NounPlanet1942611" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(2514, 1962)
+texture = ExtResource("12_r85k1")
+
+[node name="NounPlanet1942614" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1053, 2066)
+texture = ExtResource("13_60s1c")
+
+[node name="NounPlanet1942615" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(818, 1442)
+texture = ExtResource("14_euf46")
+
+[node name="NounPlanet1942617" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(728, 2668)
+texture = ExtResource("15_babt0")
+
+[node name="NounPlanet1942621" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(371, 1735)
+texture = ExtResource("16_2xrg8")
+
+[node name="NounPlanet1942622" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(2536, 322)
+texture = ExtResource("17_i6g34")
+
+[node name="NounPlanet1942624" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1555, 2599)
+texture = ExtResource("18_nab8h")
+
+[node name="NounPlanet1942625" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1448, 1543)
+texture = ExtResource("19_rvhwq")
+
+[node name="NounPlane1942628" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(331, 937)
+texture = ExtResource("20_am8ty")
+
+[node name="NounRocket1942630" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1017, 735)
+texture = ExtResource("22_8i1c0")
+
+[node name="NounSatellite1942610" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(564, 493)
+texture = ExtResource("23_ephnt")
+
+[node name="NounSatellite1942623" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(231, 2284)
+texture = ExtResource("24_ltfcu")
+
+[node name="NounSatellite1942633" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1253, 173)
+texture = ExtResource("25_hy2i0")
+
+[node name="NounStars1942632" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(199, 236)
+texture = ExtResource("26_q0ly5")
+
+[node name="NounUfo1942626" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1830, 2030)
+texture = ExtResource("27_ptog7")
+
+[node name="NounUniverse1942620" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1780, 979)
+texture = ExtResource("28_2r8rf")
