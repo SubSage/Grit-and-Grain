@@ -45,27 +45,33 @@ offset = Vector2(-40, 0)
 
 [node name="NounIrregularQuadrilateral1117058" type="Sprite2D" parent="NounKite1122256"]
 self_modulate = Color(0.745098, 0, 0.117647, 1)
-position = Vector2(32, -64)
-rotation = 1.5708
+position = Vector2(28.0948, -22.8199)
+rotation = 3.14159
 texture = ExtResource("6_f4p8x")
+offset = Vector2(-42, -4)
 
 [node name="NounIrregularQuadrilateral1117060" type="Sprite2D" parent="NounKite1122256/NounIrregularQuadrilateral1117058"]
 self_modulate = Color(0, 0, 0, 1)
 texture = ExtResource("7_svk1y")
+offset = Vector2(-42, -4)
 
 [node name="NounIrregularQuadrilateral1117059" type="Sprite2D" parent="NounKite1122256"]
 self_modulate = Color(0.745098, 0, 0.117647, 1)
-position = Vector2(-32, -64)
-rotation = 1.5708
+position = Vector2(-27.5298, -23.0072)
 scale = Vector2(1, -1)
 texture = ExtResource("6_f4p8x")
+offset = Vector2(-42, -4)
 
 [node name="NounIrregularQuadrilateral1117060" type="Sprite2D" parent="NounKite1122256/NounIrregularQuadrilateral1117059"]
 self_modulate = Color(0, 0, 0, 1)
 texture = ExtResource("7_svk1y")
+offset = Vector2(-42, -4)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
 one_shot = true
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(0, -10)
 
 [connection signal="timeout" from="Timer" to="." method="spawn_laser"]

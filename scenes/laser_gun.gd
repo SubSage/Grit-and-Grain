@@ -49,6 +49,9 @@ func start_laser_visual():
 	tween.tween_property($NounKite1122256/NounMinus2160596, "rotation_degrees", 90, 2.0)
 	tween.tween_property($NounKite1122256/NounMinus2160597, "rotation_degrees", 90, 2.0)
 	
+	tween.tween_property($NounKite1122256/NounIrregularQuadrilateral1117058, "rotation_degrees", 90, 2.0)
+	tween.tween_property($NounKite1122256/NounIrregularQuadrilateral1117059, "rotation_degrees", 90, 2.0)
+	
 	tween.tween_property($NounKite1122256/NounMinus2160596, "self_modulate:a", 1.0, 1.0)
 	tween.tween_property($NounKite1122256/NounMinus2160597, "self_modulate:a", 1.0, 1.0)
 	
@@ -60,12 +63,14 @@ func start_laser_visual():
 
 
 func spawn_laser():
+	$NounKite1122256/NounIrregularQuadrilateral1117058.rotation_degrees = 180
+	$NounKite1122256/NounIrregularQuadrilateral1117059.rotation_degrees = 0
 	$NounKite1122256/NounMinus2160596.self_modulate.a = 0.0
 	$NounKite1122256/NounMinus2160597.self_modulate.a = 0.0
 	var laser = LASER_CLASS.instantiate()
 	laser.speed = bullet_speed
 	laser.rotation = rotation
-	laser.global_position = global_position
+	laser.global_position = $Marker2D.global_position
 	laser.global_rotation = global_rotation
 	laser.angle_radian = (global_rotation) - deg_to_rad(90)
 	if friendly:
