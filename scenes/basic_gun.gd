@@ -36,6 +36,7 @@ func _process(delta: float) -> void:
 			bullet.set_friendly()
 		else:
 			bullet.set_hostile()
+		firing = false
 		cooldown = 1.0/(fire_rate)
 
 func fire():
