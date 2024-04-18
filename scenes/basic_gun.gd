@@ -7,8 +7,9 @@ class_name BASIC_GUN
 @export var angle_degree = 90
 @export var friendly = false
 @export var turn_rate = 20
-var firing = false
+@export var enabled = true
 
+var firing = false
 var cooldown = 0
 
 @onready var BULLET_CLASS = preload("res://scenes/bullet.tscn")
@@ -18,6 +19,8 @@ var cooldown = 0
 func _process(delta: float) -> void:
 	cooldown -= delta
 	cooldown = clamp(cooldown, -1, 100)
+	if not enabled:
+		return
 	if player_controlled:
 		var fire_weapon_input = Input.get_vector("fire_left", "fire_right", "fire_up", "fire_down")
 		if fire_weapon_input.length() > .1:
