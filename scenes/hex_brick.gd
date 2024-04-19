@@ -5,6 +5,8 @@ extends UNIT
 func _ready() -> void:
 	if is_kill_wall:
 		add_to_group("kill_wall")
+		$NounHexagon1117056.self_modulate = Color.BLACK
+		$NounHexagon1117056/NounHexagon1117054.self_modulate = Color.CRIMSON
 
 func die():
 	var tween = create_tween()
