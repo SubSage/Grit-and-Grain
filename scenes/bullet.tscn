@@ -1,11 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cfbfobqdoi5ya"]
+[gd_scene load_steps=4 format=3 uid="uid://cfbfobqdoi5ya"]
 
 [ext_resource type="Script" path="res://bullet.gd" id="1_sdbht"]
-[ext_resource type="Texture2D" uid="uid://xgyrubs0nvdh" path="res://icon.svg" id="2_2nt87"]
 [ext_resource type="Texture2D" uid="uid://b56deulag54fw" path="res://assets/shape_svg/noun_Pyramid_1122251.svg" id="3_rjxfu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_drern"]
-radius = 12.0
+radius = 8.0
 
 [node name="bullet" type="Area2D"]
 collision_layer = 4
@@ -17,15 +16,9 @@ self_modulate = Color(0.662745, 0.654902, 0.643137, 1)
 position = Vector2(0, 1)
 shape = SubResource("CircleShape2D_drern")
 
-[node name="Icon" type="Sprite2D" parent="."]
-visible = false
-self_modulate = Color(0.824319, 0.13445, 0.351701, 1)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_2nt87")
-
 [node name="NounPyramid1122251" type="Sprite2D" parent="."]
 self_modulate = Color(0.301961, 0.301961, 0.298039, 1)
-scale = Vector2(0.27, 0.27)
+scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_rjxfu")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

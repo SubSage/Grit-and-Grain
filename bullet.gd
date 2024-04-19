@@ -19,9 +19,11 @@ func _process(delta: float) -> void:
 
 func set_friendly():
 	set_collision_mask_value(1, true)
+	$NounPyramid1122251.self_modulate.a = .4
 
 func set_hostile():
 	set_collision_mask_value(2, true)
+	$NounPyramid1122251.self_modulate = Color.CRIMSON 
 	
 func _on_area_entered(area: Area2D) -> void:
 	if can_hit_multiple or not is_queued_for_deletion():
