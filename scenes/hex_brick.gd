@@ -1,5 +1,10 @@
 extends UNIT
 
+@export var is_kill_wall = false
+
+func _ready() -> void:
+	if is_kill_wall:
+		add_to_group("kill_wall")
 
 func die():
 	var tween = create_tween()

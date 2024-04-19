@@ -8,6 +8,7 @@ class_name BASIC_GUN
 @export var friendly = false
 @export var turn_rate = 20
 @export var enabled = true
+@export var rotation_offset = 0
 
 var firing = false
 var cooldown = 0
@@ -24,8 +25,9 @@ func _process(delta: float) -> void:
 	if player_controlled:
 		var fire_weapon_input = Input.get_vector("fire_left", "fire_right", "fire_up", "fire_down")
 		if fire_weapon_input.length() > .1:
-			global_rotation = lerp_angle(global_rotation, fire_weapon_input.angle() - deg_to_rad(-90), turn_rate * delta)
+			global_rotation = lerp_angle(global_rotation, fire_weapon_input.angle() - deg_to_rad(-90) + deg_to_rad(rotation_offset), turn_rate * delta)
 
+		
 	
 	if ((Input.is_action_pressed("fire_weapon") and player_controlled) or firing) and cooldown <= 0:
 		var bullet = BULLET_CLASS.instantiate()
@@ -44,3 +46,6 @@ func _process(delta: float) -> void:
 
 func fire():
 	firing = true
+
+func stop():
+	pass

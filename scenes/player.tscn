@@ -32,23 +32,106 @@ shape = SubResource("CircleShape2D_5c8vx")
 
 [node name="WEAPONS" type="Node2D" parent="."]
 
-[node name="laser_gun" parent="WEAPONS" instance=ExtResource("4_1eap3")]
+[node name="mode1" type="Node2D" parent="WEAPONS"]
+
+[node name="basic_gun" parent="WEAPONS/mode1" instance=ExtResource("3_sp8bm")]
+position = Vector2(-30, 8)
+rotation = -0.523599
+fire_rate = 3.0
+friendly = true
+rotation_offset = -30
+player_controlled = true
+
+[node name="basic_gun6" parent="WEAPONS/mode1" instance=ExtResource("3_sp8bm")]
+position = Vector2(-25, -6)
+rotation = -0.436332
+fire_rate = 3.0
+friendly = true
+rotation_offset = -25
+player_controlled = true
+
+[node name="basic_gun7" parent="WEAPONS/mode1" instance=ExtResource("3_sp8bm")]
+position = Vector2(-10, -30)
+rotation = -0.0872665
+fire_rate = 3.0
+friendly = true
+rotation_offset = -5
+player_controlled = true
+
+[node name="basic_gun8" parent="WEAPONS/mode1" instance=ExtResource("3_sp8bm")]
+position = Vector2(10, -30)
+rotation = 0.0872665
+fire_rate = 3.0
+friendly = true
+rotation_offset = 5
+player_controlled = true
+
+[node name="basic_gun9" parent="WEAPONS/mode1" instance=ExtResource("3_sp8bm")]
+position = Vector2(25, -8)
+rotation = 0.436332
+fire_rate = 3.0
+friendly = true
+rotation_offset = 25
+player_controlled = true
+
+[node name="basic_gun2" parent="WEAPONS/mode1" instance=ExtResource("3_sp8bm")]
+position = Vector2(30, 8)
+rotation = 0.523599
+fire_rate = 3.0
+friendly = true
+rotation_offset = 30
+player_controlled = true
+
+[node name="basic_gun3" parent="WEAPONS/mode1" instance=ExtResource("3_sp8bm")]
+position = Vector2(20, -20)
+rotation = 0.174533
+fire_rate = 3.0
+friendly = true
+rotation_offset = 10
+player_controlled = true
+
+[node name="basic_gun4" parent="WEAPONS/mode1" instance=ExtResource("3_sp8bm")]
+position = Vector2(-20, -20)
+rotation = -0.174533
+fire_rate = 3.0
+friendly = true
+rotation_offset = -10
+player_controlled = true
+
+[node name="basic_gun5" parent="WEAPONS/mode1" instance=ExtResource("3_sp8bm")]
+position = Vector2(0, -40)
+fire_rate = 3.0
+friendly = true
+player_controlled = true
+
+[node name="mode2" type="Node2D" parent="WEAPONS"]
+visible = false
+
+[node name="laser_gun" parent="WEAPONS/mode2" instance=ExtResource("4_1eap3")]
 position = Vector2(0, -46)
 bullet_speed = 0
 fire_rate = 12.0
 friendly = true
+enabled = false
 player_controlled = true
 
-[node name="basic_gun" parent="WEAPONS" instance=ExtResource("3_sp8bm")]
-position = Vector2(-30, 8)
-fire_rate = 10.0
-friendly = true
-player_controlled = true
+[node name="mode3" type="Node2D" parent="WEAPONS"]
+visible = false
 
-[node name="basic_gun2" parent="WEAPONS" instance=ExtResource("3_sp8bm")]
-position = Vector2(30, 8)
+[node name="basic_gun3" parent="WEAPONS/mode3" instance=ExtResource("3_sp8bm")]
+position = Vector2(-15, -30)
+bullet_speed = 900
 fire_rate = 12.0
 friendly = true
+enabled = false
+player_controlled = true
+
+[node name="basic_gun4" parent="WEAPONS/mode3" instance=ExtResource("3_sp8bm")]
+position = Vector2(15, -30)
+bullet_speed = 900
+fire_rate = 12.0
+friendly = true
+enabled = false
 player_controlled = true
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

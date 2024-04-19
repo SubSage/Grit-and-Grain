@@ -9,8 +9,9 @@ func _ready() -> void:
 	if randf() < .5:
 		#steer = -90
 		pass
-func _process(delta: float) -> void:
 	
+	
+func _process(delta: float) -> void:
 	if global_position.distance_to(player_node.global_position) > move_to_player_proximity:
 		var target_location = player_node.global_position
 		if $check_ahead.get_overlapping_areas().size() > 0:

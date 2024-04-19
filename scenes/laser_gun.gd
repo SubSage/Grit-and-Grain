@@ -9,7 +9,7 @@ class_name LASER_GUN
 @export var turn_rate = 20
 @export var enabled = true
 var firing = false
-
+var tween
 var cooldown = 0
 
 @onready var LASER_CLASS = preload("res://scenes/laser.tscn")
@@ -36,6 +36,21 @@ func _process(delta: float) -> void:
 func fire():
 	firing = true
 
+func stop():
+	if tween:
+		tween.stop()
+		tween.kill()
+	$Timer.stop()
+	$NounKite1122256/NounRipple2343683.scale = Vector2.ONE * 6
+	$NounKite1122256/NounMinus2160596.rotation_degrees = 120
+	$NounKite1122256/NounMinus2160597.rotation_degrees = 60
+	$NounKite1122256/NounMinus2160596.self_modulate.a = 0.0
+	$NounKite1122256/NounMinus2160597.self_modulate.a = 0.0
+	$NounKite1122256/NounRipple2343683.self_modulate.a = 0.0
+	$NounKite1122256/NounIrregularQuadrilateral1117058.rotation_degrees = 180
+	$NounKite1122256/NounIrregularQuadrilateral1117059.rotation_degrees = 0
+	
+
 func start_laser_visual():
 	$NounKite1122256/NounRipple2343683.scale = Vector2.ONE * 6
 	$NounKite1122256/NounMinus2160596.rotation_degrees = 120
@@ -44,7 +59,7 @@ func start_laser_visual():
 	$NounKite1122256/NounMinus2160596.self_modulate.a = 0.0
 	$NounKite1122256/NounMinus2160597.self_modulate.a = 0.0
 	
-	var tween = create_tween()
+	tween = create_tween()
 	tween.set_parallel(true)
 	tween.tween_property($NounKite1122256/NounRipple2343683, "self_modulate", Color("d9001e"), 2.0)
 	tween.tween_property($NounKite1122256/NounRipple2343683, "scale", Vector2(2.0, 2.0), 3.0)
