@@ -1,7 +1,8 @@
 extends UNIT
 
 @export var move_to_player_proximity = 250
-@export var fire_at_player_proximity = 500
+@export var fire_at_player_proximity = 300
+@export var look_at_player_proximity = 300
 var steer = 90
 
 
@@ -12,6 +13,10 @@ func _ready() -> void:
 	
 	
 func _process(delta: float) -> void:
+	if $Timer.time_left > 0.0:
+		return
+	$NounCircles1387978.rotation_degrees += 15 * delta
+	$NounPlus1809809.rotation_degrees -= 15 * delta
 	if global_position.distance_to(player_node.global_position) > move_to_player_proximity:
 		var target_location = player_node.global_position
 		if $check_ahead.get_overlapping_areas().size() > 0:
@@ -31,7 +36,8 @@ func _process(delta: float) -> void:
 	if global_position.distance_to(player_node.global_position) <= fire_at_player_proximity:
 		for gun in $WEAPONS.get_children():
 			gun.fire()
-
+		$Timer.start()
+	#if global_position.distance_to(player_node.global_position) < look_at_player_proximity:
 	look_at(player_node.global_position)
 
 

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bu4g8lvjqxc5a"]
+
+[ext_resource type="Script" path="res://scenes/bomb.gd" id="1_t7q25"]
+[ext_resource type="Texture2D" uid="uid://tgsgvc3wdle5" path="res://assets/shape_svg/noun_Circle_2994429.svg" id="2_8nbdd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0ghem"]
+radius = 630.0
+
+[node name="bomb" type="Area2D"]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_t7q25")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_0ghem")
+
+[node name="NounCircle2994429" type="Sprite2D" parent="."]
+modulate = Color(0.84, 0.27552, 0.2352, 1)
+texture = ExtResource("2_8nbdd")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

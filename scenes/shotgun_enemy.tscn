@@ -1,0 +1,156 @@
+[gd_scene load_steps=10 format=3 uid="uid://csdugsj5um1qb"]
+
+[ext_resource type="Script" path="res://scenes/shotgun_enemy.gd" id="1_dpoqo"]
+[ext_resource type="Texture2D" uid="uid://b56deulag54fw" path="res://assets/shape_svg/noun_Pyramid_1122251.svg" id="2_7tm1s"]
+[ext_resource type="Texture2D" uid="uid://ei66wdw5ksq" path="res://assets/shape_svg/noun_air_element_3554176.svg" id="2_qqyv4"]
+[ext_resource type="Texture2D" uid="uid://cjxeeu8fqdrbb" path="res://assets/shape_svg/noun_Plus_1809809.svg" id="2_t414b"]
+[ext_resource type="PackedScene" uid="uid://dv5scomcsyc54" path="res://scenes/basic_gun.tscn" id="3_p10eh"]
+[ext_resource type="Texture2D" uid="uid://dbqukwe646vbh" path="res://assets/shape_svg/noun_circles_1387978.svg" id="3_plvhb"]
+[ext_resource type="PackedScene" uid="uid://bivsn48mk3vx5" path="res://scenes/laser_gun.tscn" id="7_un6we"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yijod"]
+radius = 20.2237
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rwj3h"]
+radius = 8.0
+
+[node name="shotgun_enemy" type="Node2D"]
+script = ExtResource("1_dpoqo")
+health = 20
+speed = 300
+
+[node name="NounPyramid1122251" type="Sprite2D" parent="."]
+self_modulate = Color(0.764706, 0.2, 0.121569, 1)
+position = Vector2(24, 8.76454e-14)
+rotation = 1.5708
+scale = Vector2(0.89, 0.89)
+texture = ExtResource("2_7tm1s")
+
+[node name="NounPlus1809809" type="Sprite2D" parent="."]
+self_modulate = Color(0.764706, 0.2, 0.121569, 1)
+rotation = -2.39983
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_t414b")
+
+[node name="NounCircles1387978" type="Sprite2D" parent="."]
+self_modulate = Color(0.764706, 0.2, 0.121569, 1)
+texture = ExtResource("3_plvhb")
+
+[node name="NounFireElement3556726" type="Sprite2D" parent="."]
+visible = false
+self_modulate = Color(0.765428, 0.199121, 0.1217, 1)
+rotation = 1.5708
+scale = Vector2(0.77, 0.77)
+texture = ExtResource("2_qqyv4")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_yijod")
+
+[node name="check_ahead" type="Area2D" parent="."]
+position = Vector2(60, 0)
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="check_ahead"]
+shape = SubResource("CircleShape2D_rwj3h")
+
+[node name="check_left" type="Area2D" parent="."]
+position = Vector2(0, -60)
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="check_left"]
+shape = SubResource("CircleShape2D_rwj3h")
+
+[node name="check_right" type="Area2D" parent="."]
+position = Vector2(0, 60)
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="check_right"]
+shape = SubResource("CircleShape2D_rwj3h")
+
+[node name="WEAPONS" type="Node2D" parent="."]
+
+[node name="basic_gun" parent="WEAPONS" instance=ExtResource("3_p10eh")]
+visible = false
+rotation = 1.5708
+bullet_speed = 200
+fire_rate = 1.0
+
+[node name="basic_gun2" parent="WEAPONS" instance=ExtResource("3_p10eh")]
+visible = false
+rotation = 1.8326
+bullet_speed = 200
+fire_rate = 1.0
+rotation_offset = 15
+
+[node name="basic_gun3" parent="WEAPONS" instance=ExtResource("3_p10eh")]
+visible = false
+rotation = 2.0944
+bullet_speed = 200
+fire_rate = 1.0
+rotation_offset = 30
+
+[node name="basic_gun4" parent="WEAPONS" instance=ExtResource("3_p10eh")]
+visible = false
+rotation = 2.35619
+bullet_speed = 200
+fire_rate = 1.0
+rotation_offset = 45
+
+[node name="basic_gun5" parent="WEAPONS" instance=ExtResource("3_p10eh")]
+visible = false
+rotation = 2.61799
+bullet_speed = 200
+fire_rate = 1.0
+rotation_offset = 60
+
+[node name="basic_gun6" parent="WEAPONS" instance=ExtResource("3_p10eh")]
+visible = false
+rotation = 1.309
+bullet_speed = 200
+fire_rate = 1.0
+rotation_offset = -15
+
+[node name="basic_gun7" parent="WEAPONS" instance=ExtResource("3_p10eh")]
+visible = false
+rotation = 1.0472
+bullet_speed = 200
+fire_rate = 1.0
+rotation_offset = -30
+
+[node name="basic_gun8" parent="WEAPONS" instance=ExtResource("3_p10eh")]
+visible = false
+rotation = 0.785398
+bullet_speed = 200
+fire_rate = 1.0
+rotation_offset = -45
+
+[node name="basic_gun9" parent="WEAPONS" instance=ExtResource("3_p10eh")]
+visible = false
+rotation = 0.523599
+bullet_speed = 200
+fire_rate = 1.0
+rotation_offset = -60
+
+[node name="laser_gun" parent="WEAPONS" instance=ExtResource("7_un6we")]
+position = Vector2(33, -33)
+rotation = 0.785398
+bullet_speed = 100
+
+[node name="laser_gun3" parent="WEAPONS" instance=ExtResource("7_un6we")]
+position = Vector2(73, 2)
+rotation = 1.55763
+bullet_speed = 100
+
+[node name="laser_gun2" parent="WEAPONS" instance=ExtResource("7_un6we")]
+position = Vector2(33, 33)
+rotation = 2.35619
+bullet_speed = 100
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.5
+one_shot = true
+autostart = true
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

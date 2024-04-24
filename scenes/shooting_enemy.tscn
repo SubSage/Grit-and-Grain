@@ -12,7 +12,6 @@ radius = 8.0
 
 [node name="shooting_enemy" type="Node2D"]
 script = ExtResource("1_p4c6r")
-speed = 250
 
 [node name="NounFireElement3556726" type="Sprite2D" parent="."]
 self_modulate = Color(0.765428, 0.199121, 0.1217, 1)
@@ -53,3 +52,5 @@ visible = false
 rotation = 1.5708
 bullet_speed = 200
 fire_rate = 0.2
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
